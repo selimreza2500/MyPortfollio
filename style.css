@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -17,16 +18,23 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background:coral;
-    padding: 15px; 
+    padding: 15px 0; 
     font-family: 'Ubuntu','sans-serif';
     height: 68px;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0; 
+    background:rgb(235, 76, 18);
 }
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight:600;
     color: darkcyan;
+}
+.navbar .logo a span{
+    color: rgb(156, 41, 6);
 }
 .navbar .max-width{
     display: flex;
@@ -39,9 +47,13 @@
 }
 .navbar .menu li a{
     color: darkgreen;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(248, 14, 33);
 }
 /*Home styling*/
 .home{
@@ -63,27 +75,46 @@
 .home .max-width{
     margin: auto 0 auto 40px;
     
-    
 }
 .home .homeContent .text-1{
     font-size: 27px;
+    font-size: 35px;
+    font-weight: 200;
+    margin-left: 70px;
+    
 }
 .home .homeContent .text-2{
-    font-size: 50px;
+    font-size: 65px;
     font-weight: 400;
     margin-left: -3px;
+   
 }
 .home .homeContent .text-3{
     font-size: 35px;
     margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .home .homeContent .text-3 span{
     font-size: 25px;
     font-weight: 500;
-    font-family: 'Ubuntu';
+    color: rgb(173, 42, 2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.home .homeContent a{
+    display: inline-block;
+    background-color: rgb(87, 12, 58);
+    padding: 7px;
+    font-size: 15px;
+    color: rgb(240, 228, 228);
+    margin: 0 110px;
+    font-family: 'Oswald';
+    
+}
+
+   
 .about{
-    background-color: burlywood;
+    background-color: rgb(155, 126, 116);
     padding: 15px;
 }
 .about h1{
@@ -98,4 +129,12 @@
 .service h1{
     text-align: center;
 
+}
+.aboutL{
+    width: 100%;
+    height: auto;
+}
+.about h1{
+    background-color: rgb(235, 76, 18);
+    font-size: 30px;
 }
